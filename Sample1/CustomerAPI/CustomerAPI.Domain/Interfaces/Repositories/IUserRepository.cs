@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CustomerAPI.Domain.Interfaces.Repositories
+﻿namespace CustomerAPI.Domain.Interfaces.Repositories
 {
     public interface IUserRepository<T> : IRepository<T> where T : class
     {
+        #region Public Methods
+
         T RegisterUser(T entity);
+
+        #endregion Public Methods
     }
 }
